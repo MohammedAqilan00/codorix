@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>mohammed ps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="styles.css">
+    <link href="./font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="auth-container">
+        <div id="custom-alert" class="alert-box" style="display:none;"></div>
+
+        <section class="card">
+            <div id="login-view">
+                <form id="login-form" method="post" action="login.php">
+                    <h3>تسجيل الدخول</h3>
+
+                    <label for="login-username"><i class="bi-person"></i> اسم المستخدم</label>
+                    <input type="text" name="username" placeholder="البريد الإلكتروني أو اسم المستخدم" id="login-username" required>
+
+                    <label for="password"><i class="bi-shield"></i> كلمة المرور</label>
+                    <input type="password" name="password" placeholder="كلمة المرور" id="password" required minlength="6">
+
+                    <button type="submit">تسجيل الدخول</button>
+
+                    <div class="sign">
+                        <b>لست عضوا؟ <a href="register.html" id="show-signup">سجل الآن</a></b>
+                    </div>
+                </form>
+            </div>
+
+            <!-- خطوط التصميم الجمالية -->
+            <span class="border-line top"></span>
+            <span class="border-line right"></span>
+            <span class="border-line bottom"></span>
+            <span class="border-line left"></span>
+        </section>
+    </div>
+
+    
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* الشريط الجانبي الثابت */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(12, 12, 12, 0.9);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.9);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+#sidebar a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#sidebar a:hover {
+    color: #ffd700;
+}
+
+#user-profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#user-profile-img:hover {
+    transform: scale(1.1);
+}
+
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+
+#search-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    top: -17px;
+}
+
+#search-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#search-btn:hover {
+    transform: scale(1.1);
+    color: rgb(60, 255, 0);
+}
+
+/* ✅ تم التعديل هنا */
+#topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: calc(100% - 250px);
+    background-color: rgba(12, 12, 12, 0.9);
+    color: rgba(12, 12, 12, 0.9);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.site-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#site-logo {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+#site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 219, 61);
+    ;
+}
+
+
